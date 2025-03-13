@@ -34,24 +34,79 @@ import 'package:onscreen_keypad/onscreen_keypad.dart';
 Use the `OnScreenKeyPad` widget:
 
 ```dart
-import 'package:flutter/material.dart';
-import 'package:onscreen_keypad/onscreen_keypad.dart';
+void main() {
+  runApp(const KeypadExampleApp());
+}
 
-void main() => runApp(MyApp());
+class KeypadExampleApp extends StatelessWidget {
+  const KeypadExampleApp({super.key});
 
-class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'KeyPad Demo',
-      home: Scaffold(
-        appBar: AppBar(title: Text('KeyPad Demo')),
-        body: Center(
-          child: OnScreenKeyPad(
-            onKeyPress: (val) {
-              print('Key pressed: $val');
-            },
-          ),
+      title: 'Onscreen Keypad Example',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const KeypadDemoScreen(),
+    );
+  }
+}
+
+class KeypadDemoScreen extends StatefulWidget {
+  const KeypadDemoScreen({super.key});
+
+  @override
+  State<KeypadDemoScreen> createState() => _KeypadDemoScreenState();
+}
+
+class _KeypadDemoScreenState extends State<KeypadDemoScreen> {
+  String _enteredText = '';
+  final TextEditingController _controller = TextEditingController();
+
+  void _onKeyPress(String value) {
+    setState(() {
+      if (value == 'backspace') {
+        if (_enteredText.isNotEmpty) {
+          _enteredText = _enteredText.substring(0, _enteredText.length - 1);
+        }
+      } else {
+        _enteredText += value;
+      }
+      _controller.text = _enteredText; // Update controller text
+      _controller.selection = TextSelection.fromPosition(
+        TextPosition(offset: _controller.text.length), // Move cursor to end
+      );
+    });
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose(); // Dispose the controller to avoid memory leaks
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Onscreen Keypad Test')),
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            TextField(
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Input Field',
+              ),
+              readOnly: true, // Ensures input comes only from the keypad
+              controller: _controller,
+            ),
+            const SizedBox(height: 20),
+            OnScreenKeyPad(
+              onKeyPress: _onKeyPress,
+              enableHapticFeedback: true,
+            ),
+          ],
         ),
       ),
     );

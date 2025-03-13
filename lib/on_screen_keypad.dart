@@ -29,6 +29,16 @@ class OnScreenKeyPad extends StatelessWidget {
     this.style,
   });
 
+  void _handleKeyPress(String value) {
+    if (onKeyPress != null) {
+      if (value == "⌫") {
+        onKeyPress("backspace"); 
+      } else {
+        onKeyPress!(value);
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Align(
@@ -54,9 +64,9 @@ class OnScreenKeyPad extends StatelessWidget {
                           splashColor: keyCellSplashColor ?? Colors.transparent,
                           highlightColor: keyCellHighlightColor ?? Colors.transparent,
                           backgroundColor: keyCellBackgroundColor,
-                          value: 'backspace',
+                          value: "⌫",  // Correct backspace value
                           onTap: (val) {
-                            onKeyPress(val);
+                            _handleKeyPress(val);
                           },
                           child: Icon(
                             Icons.backspace,
@@ -73,7 +83,7 @@ class OnScreenKeyPad extends StatelessWidget {
                     backgroundColor: keyCellBackgroundColor,
                     value: keyCell,
                     onTap: (val) {
-                      onKeyPress(val);
+                      _handleKeyPress(val);
                     },
                     style: style,
                   );
