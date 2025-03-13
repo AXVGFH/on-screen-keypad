@@ -4,3 +4,6 @@
 
 - Updated package to version 0.0.2
 
+
+- Updated package to version 0.0.2
+
