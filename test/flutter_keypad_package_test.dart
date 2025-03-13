@@ -1,9 +1,9 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:flutter_keypad_package/on_screen_keypad.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter/services.dart';
+import 'package:onscreen_keypad/on_screen_keypad.dart';
 
 void main() {
   group('OnScreenKeyPad', () {
