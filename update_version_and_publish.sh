@@ -15,6 +15,7 @@ fi
 NEW_VERSION=$1
 PUBSPEC_FILE="pubspec.yaml"
 CHANGELOG_FILE="CHANGELOG.md"
+README_FILE="README.md"
 
 # Update version in pubspec.yaml
 echo "Updating version in $PUBSPEC_FILE..."
@@ -26,9 +27,13 @@ DATE=$(date +"%Y-%m-%d")
 sed -i '' "s/^## \[Unreleased\]/## [$NEW_VERSION] - $DATE/" "$CHANGELOG_FILE"
 echo -e "\n- Updated package to version $NEW_VERSION\n" >> "$CHANGELOG_FILE"
 
+# Update version in README.md
+echo "Updating dependency version in $README_FILE..."
+sed -i '' "s/onscreen_keypad: \^.*$/onscreen_keypad: ^$NEW_VERSION/" "$README_FILE"
+
 # Commit changes
 echo "Committing changes..."
-git add "$PUBSPEC_FILE" "$CHANGELOG_FILE"
+git add "$PUBSPEC_FILE" "$CHANGELOG_FILE" "$README_FILE"
 git commit -m "chore: bump version to $NEW_VERSION"
 git push origin master  # Change branch name if needed
 
