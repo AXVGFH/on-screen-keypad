@@ -16,3 +16,6 @@
 
 - Updated package to version 0.0.2+3
 
+
+- Updated package to version 0.0.2+4
+

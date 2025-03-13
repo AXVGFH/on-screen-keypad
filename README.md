@@ -14,7 +14,7 @@ flutter pub add onscreen_keypad
 ### **Or manually add it to `pubspec.yaml`**
 ```yaml
 dependencies:
-  onscreen_keypad: ^0.0.2+3
+  onscreen_keypad: ^0.0.2+4
 ```
 
 Then run:
