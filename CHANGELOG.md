@@ -10,3 +10,6 @@
 
 - Updated package to version 0.0.2+1
 
+
+- Updated package to version 0.0.2+2
+
