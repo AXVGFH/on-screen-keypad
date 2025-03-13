@@ -1,14 +1,20 @@
-# Flutter Keypad Package
+# Onscreen Keyboard
 
-A customizable on-screen keypad widget for Flutter applications.
+A customizable on-screen keyboard widget for Flutter applications.
 
 ## Installation
 
-Add this to your `pubspec.yaml`:
+### **Using `flutter pub add`**
+Run the following command in your terminal:
 
+```sh
+flutter pub add onscreen_keypad
+```
+
+### **Or manually add it to `pubspec.yaml`**
 ```yaml
 dependencies:
-  flutter_keypad_package: ^0.0.1
+  onscreen_keypad: ^0.0.1+1
 ```
 
 Then run:
@@ -22,14 +28,14 @@ flutter pub get
 Import the package:
 
 ```dart
-import 'package:flutter_keypad_package/flutter_keypad_package.dart';
+import 'package:onscreen_keypad/onscreen_keypad.dart';
 ```
 
 Use the `OnScreenKeyPad` widget:
 
 ```dart
 import 'package:flutter/material.dart';
-import 'package:flutter_keypad_package/flutter_keypad_package.dart';
+import 'package:onscreen_keypad/onscreen_keypad.dart';
 
 void main() => runApp(MyApp());
 
@@ -55,14 +61,21 @@ class MyApp extends StatelessWidget {
 
 ## Features
 
-✅ Customizable keypad UI  
+✅ Customizable keyboard UI  
 ✅ Supports haptic feedback  
 ✅ Left and right action buttons  
 ✅ Custom styling support  
 
+## Use Cases
+
+- Numeric input fields (e.g., PIN entry, calculator, ATM interface)
+- Custom keyboard requirements in apps where the default keyboard is not ideal
+- Kiosk applications requiring an on-screen input solution
+- Accessibility features for users needing a specialized input method
+
 ## Customization
 
-You can customize the keypad using various properties:
+You can customize the keyboard using various properties:
 
 ```dart
 OnScreenKeyPad(
