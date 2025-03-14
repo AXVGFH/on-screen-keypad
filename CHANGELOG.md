@@ -22,3 +22,6 @@
 
 - Updated package to version 1.0.2+5
 
+
+- Updated package to version 1.0.3
+
