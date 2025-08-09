@@ -112,7 +112,7 @@ class OnscreenKeyboardTextField extends StatefulWidget {
     this.canRequestFocus = true,
     this.spellCheckConfiguration,
     this.magnifierConfiguration,
-    this.validator, // <-- إضافة validator هنا
+    this.validator, required this.readOnly, // <-- إضافة validator هنا
   });
 
   /// Enables or disables the automatic onscreen keyboard behavior.
@@ -725,7 +725,7 @@ class OnscreenKeyboardTextFieldState extends State<OnscreenKeyboardTextField> {
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
       controller: effectiveController,
       focusNode: effectiveFocusNode,
       decoration: widget.decoration,
@@ -756,7 +756,7 @@ class OnscreenKeyboardTextFieldState extends State<OnscreenKeyboardTextField> {
       minLines: widget.minLines,
       mouseCursor: widget.mouseCursor,
       onEditingComplete: widget.onEditingComplete,
-      onSubmitted: widget.onSubmitted,
+      onFieldSubmitted: widget.onSubmitted,
       readOnly: widget.readOnly,
       restorationId: widget.restorationId,
       scrollPadding: widget.scrollPadding,
