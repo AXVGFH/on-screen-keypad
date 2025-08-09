@@ -1,4 +1,4 @@
-name: onscreen_keypad
+name: flutter_onscreen_keyboard
 description: A customizable on-screen numeric keypad for Flutter apps. Ideal for PIN entry, authentication screens, and custom input fields with haptic feedback support.
 version: 1.0.3
 homepage: https://github.com/Henrydykee/on-screen-keypad.git
