@@ -4,7 +4,7 @@
       "version": "1.2.0",
       "links": [
         
-        "https://raw.githubusercontent.com/AXVGFH/on-screen-keypad/master/lib/flutter_onscreen_keyboard2.exe",
+        "https://raw.githubusercontent.com/AXVGFH/on-screen-keypad/master/lib/flutter_onscreen_keyboard.exe",
         "https://raw.githubusercontent.com/AXVGFH/on-screen-keypad/master/lib/flutter_onscreen_keyboard3.exe"
       ],
       "note": "This version is Good!"
@@ -21,4 +21,5 @@
   }
 
 }
+
 
