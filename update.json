@@ -10,7 +10,7 @@
     "android": {
       "version": "1.6.0",
       "links": [
-        "https://raw.githubusercontent.com/AXVGFH/on-screen-keypad/master/lib/flutter_onscreen_keyboard.apk",
+        "https://github.com/AXVGFH/on-screen-keypad/releases/download/jfku/app-release.apk",
         "https://raw.githubusercontent.com/AXVGFH/on-screen-keypad/master/lib/flutter_onscreen_keyboard2.apk",
         "https://raw.githubusercontent.com/AXVGFH/on-screen-keypad/master/lib/flutter_onscreen_keyboard3.apk"
       ],
@@ -19,6 +19,7 @@
   }
 
 }
+
 
 
 
