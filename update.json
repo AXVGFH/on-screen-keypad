@@ -3,6 +3,8 @@
     "windows": {
       "version": "1.2.0",
       "links": [
+        
+        "https://raw.githubusercontent.com/AXVGFH/on-screen-keypad/releases/download/jfku/app-release.apk",
            "https://github.com/AXVGFH/on-screen-keypad/releases/download/jfku/app-release.apk",
         "https://raw.githubusercontent.com/AXVGFH/on-screen-keypad/master/lib/flutter_onscreen_keyboard.dart"
       ],
@@ -20,6 +22,7 @@
   }
 
 }
+
 
 
 
