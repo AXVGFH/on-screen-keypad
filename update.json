@@ -1,10 +1,10 @@
 {
   "platforms": {
     "windows": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "links": [
         
-        "https://github.com/AXVGFH/on-screen-keypad/releases/download/nv/RIXPOS.msi"
+        "https://github.com/AXVGFH/on-screen-keypad/releases/download/nv/setup.exe"
 
       ],
       "note": "This version is Good!"
@@ -21,36 +21,3 @@
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
