@@ -1,7 +1,7 @@
 {
   "platforms": {
     "windows": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "links": [
         
         "https://github.com/AXVGFH/on-screen-keypad/releases/download/jkhjkhlk/setup.exe"
@@ -21,5 +21,6 @@
   }
 
 }
+
 
 
