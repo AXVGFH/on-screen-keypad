@@ -1,10 +1,10 @@
 {
   "platforms": {
     "windows": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "links": [
         
-        "https://github.com/AXVGFH/on-screen-keypad/releases/download/fgdd/setup.exe"
+        "https://github.com/AXVGFH/on-screen-keypad/releases/download/fgdd/RIXPOS.msi"
 
       ],
       "note": "This version is Good!"
@@ -21,6 +21,7 @@
   }
 
 }
+
 
 
 
