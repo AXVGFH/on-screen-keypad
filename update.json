@@ -1,7 +1,7 @@
 {
   "platforms": {
     "windows": {
-      "version": "1.0.1",
+      "version": "1.0.0",
       "links": [
         
         "https://github.com/AXVGFH/on-screen-keypad/releases/download/fgdd/setup.exe"
@@ -21,6 +21,7 @@
   }
 
 }
+
 
 
 
