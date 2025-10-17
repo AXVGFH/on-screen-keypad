@@ -1,7 +1,7 @@
 {
   "platforms": {
     "windows": {
-      "version": "1.0.3",
+      "version": "1.0.1",
       "links": [
           "https://github.com/AXVGFH/on-screen-keypad/releases/download/jkhjkhlk/updateer102.exe"
       ],
@@ -17,6 +17,7 @@
   }
 
 }
+
 
 
 
