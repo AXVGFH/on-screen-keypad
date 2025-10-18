@@ -1,9 +1,9 @@
 {
   "platforms": {
     "windows": {
-      "version": "1.0.2",
+      "version": "1.0.3",
       "links": [
-          "https://github.com/AXVGFH/on-screen-keypad/releases/download/jkhjkhlk/mysetup.exe"
+          "https://github.com/AXVGFH/on-screen-keypad/releases/download/jkhjkhlk/g103.exe"
       ],
       "note": "This version is Good!"
     },
@@ -17,6 +17,7 @@
   }
 
 }
+
 
 
 
