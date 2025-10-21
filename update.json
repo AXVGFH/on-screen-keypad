@@ -8,15 +8,16 @@
       "note": "This version is Good!"
     },
     "android": {
-      "version": "1.0.3",
+      "version": "1.0.4",
       "links": [
-        "https://github.com/AXVGFH/on-screen-keypad/releases/download/jkhjkhlk/g103.exe"
+        "https://github.com/AXVGFH/on-screen-keypad/releases/download/jkhjkhlk/app-release.apk"
       ],
       "note": "This version of Android is Good!"
     }
   }
 
 }
+
 
 
 
